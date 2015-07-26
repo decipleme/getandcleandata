@@ -7,6 +7,7 @@ This repository contains three files
 1. **Codebook.md** -    explains the details about the the layout of the data set, the variables and their definitions, any units of measurement, etc
 2. **README.md** -      explains what the script does and how to run it and view the tidy data created using the script
 3. **run_analysis.R** - the R script that reads a given set of data and massages them into a tidy data
+--------------------------------------------------------------------------------------------
 
 
 ####The Script - run_analysis.R
@@ -24,24 +25,34 @@ The pre-requisites for this operation is -
 Processing is done in steps specified in the project description.
 
 **Step 1: Merges the training and the test sets to create one data set.**
+
 The files that are read to load the test data are -
 
 	* "./UCI HAR Dataset/test/subject_test.txt" - contains the test subject Ids
-        * "./UCI HAR Dataset/test/y_test.txt"       - contains the test activities performedby the subjects
-	* "./UCI HAR Dataset/test/X_test.txt"       - contains the test measurements collected from the accelerometers from the Samsung Galaxy S smartphone
+	* "./UCI HAR Dataset/test/y_test.txt"       - contains the test activities performed
+
+						      by the subjects
+	* "./UCI HAR Dataset/test/X_test.txt"       - contains the test measurements collected 
+						      from the accelerometers from the Samsung 
+						      Galaxy S smartphone
 
 
 The files that are read to load the training data are -
 
 	* "./UCI HAR Dataset/train/subject_train.txt" - contains the training subject Ids
-        * "./UCI HAR Dataset/train/y_train.txt"       - contains the training activities performed by the subjects
-	* "./UCI HAR Dataset/train/X_train.txt"       - contains the measurements collected during training phase from the accelerometers from the Samsung Galaxy S smartphone
+	* "./UCI HAR Dataset/train/y_train.txt"       - contains the training activities performed 
+							by the subjects
+	* "./UCI HAR Dataset/train/X_train.txt"       - contains the measurements collected 
+
+							during training phase from the accelerometers 
+							from the Samsung Galaxy S smartphone
 
 
 Both training and test phase data are combined first with the subjects and activity data column wise respectively. The combined training and test data is then stacked upon to form a complete data set. 
 
 
 **Step 3: Uses descriptive activity names to name the activities in the data set.**
+
 Activity labels are loaded from the file -
 
 	* "./UCI HAR Dataset/activity_labels.txt"     - contains the labels for the 6 activities
@@ -49,6 +60,7 @@ This data is replaced in the combined data's _activity_ column
 
 
 **Step 4: Appropriately labels the data set with descriptive variable names.**
+
 In this step the script reads - 
 
 	* "./UCI HAR Dataset/features.txt"            - contains the measurements labels
@@ -56,6 +68,7 @@ This data is needed to name the columns of the combined data. First, unique name
 
 
 **Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.**
+
 Script then uses _**select()**_ function of the _**dplyr**_ package to grab only the necessary columns form the combined data set to fulfil the requirement of step 2 of the rubric
 
 
@@ -63,6 +76,7 @@ _**NOTE:** This completes the 4 steps to combine the required data. I have taken
 
 
 **Step 5: From the data set in steps above, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
+
 Script uses the _**reshape2**_ package's APIs to process the data set further.
 
 	* It first, melts the data set using _**melt()**_ api with _ID=c("subjects", "activity")_ and the rest of the columns as _measure.vars_
