@@ -20,154 +20,211 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ####Attribute Information:
 
      subjects
-     
           ID of the 30 volunteers who participated in the experiment
-          
                length: 2 
                type:   Integer Id of person
                range:  1..30
 
-
      activity
-     
-          Six activities each person performed
-          
+          Activities each person performed during the experiment
                length: 1
                type:   character
                range:  ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS")
 
-
-tBodyAcc_mean_axis-X
-
-tBodyAcc_mean_axis-Y
-     
-tBodyAcc_mean_axis-Z
-
-tGravityAcc_mean_axis-X
-
-tGravityAcc_mean_axis-Y
-
-tGravityAcc_mean_axis-Z
-  
-tBodyAccJerk_mean_axis-X
-
-tBodyAccJerk_mean_axis-Y
-
-tBodyAccJerk_mean_axis-Z
-
-tBodyGyro_mean_axis-X
-    
-tBodyGyro_mean_axis-Y
-
-tBodyGyro_mean_axis-Z
-
-tBodyGyroJerk_mean_axis-X
-
-tBodyGyroJerk_mean_axis-Y
-
-tBodyGyroJerk_mean_axis-Z
-
-tBodyAccMag_mean
-
-tGravityAccMag_mean
-
-tBodyAccJerkMag_mean
-     
-tBodyGyroMag_mean
-
-tBodyGyroJerkMag_mean
-
-fBodyAcc_mean_axis-X
-
-fBodyAcc_mean_axis-Y
-     
-fBodyAcc_mean_axis-Z
-
-fBodyAccJerk_mean_axis-X
-
-fBodyAccJerk_mean_axis-Y
-
-fBodyAccJerk_mean_axis-Z
- 
-fBodyGyro_mean_axis-X
-
-fBodyGyro_mean_axis-Y
-
-fBodyGyro_mean_axis-Z
-
-fBodyAccMag_mean
-         
-fBodyBodyAccJerkMag_mean
-
-fBodyBodyGyroMag_mean
-
-fBodyBodyGyroJerkMag_mean
-
-tBodyAcc_std_axis-X
-      
-tBodyAcc_std_axis-Y
-
-tBodyAcc_std_axis-Z
-
-tGravityAcc_std_axis-X
-
-tGravityAcc_std_axis-Y
-   
-tGravityAcc_std_axis-Z
-
-tBodyAccJerk_std_axis-X
-
-tBodyAccJerk_std_axis-Y
-
-tBodyAccJerk_std_axis-Z
-  
-tBodyGyro_std_axis-X
-
-tBodyGyro_std_axis-Y
-
-tBodyGyro_std_axis-Z
-
-tBodyGyroJerk_std_axis-X
- 
-tBodyGyroJerk_std_axis-Y
-
-tBodyGyroJerk_std_axis-Z
-
-tBodyAccMag_std
-
-tGravityAccMag_std
+_NOTE: prefix **'t'** denotes time domain signals and
+       prefix **'f'** denote frequence domain signals_
        
-tBodyAccJerkMag_std
-
-tBodyGyroMag_std
-
-tBodyGyroJerkMag_std
-
-fBodyAcc_std_axis-X
-      
-fBodyAcc_std_axis-Y
-
-fBodyAcc_std_axis-Z
-
-fBodyAccJerk_std_axis-X
-
-fBodyAccJerk_std_axis-Y
-  
-fBodyAccJerk_std_axis-Z
-
-fBodyGyro_std_axis-X
-
-fBodyGyro_std_axis-Y
-
-fBodyGyro_std_axis-Z
+     tBodyAcc_mean_axis-X
+          mean of the body acceleration signal along x-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
      
-fBodyAccMag_std
+     tBodyAcc_mean_axis-Y
+          mean of the body acceleration signal along y-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
+     
+     tBodyAcc_mean_axis-Z
+          mean of the body acceleration signal along z-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
 
-fBodyBodyAccJerkMag_std
+     tGravityAcc_mean_axis-X
+          mean of the gravity acceleration signal along x-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
 
-fBodyBodyGyroMag_std
+     tGravityAcc_mean_axis-Y
+          mean of the gravity acceleration signal along y-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
 
-fBodyBodyGyroJerkMag_std
+     tGravityAcc_mean_axis-Z
+          mean of the gravity acceleration signal along z-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
+  
+     tBodyAccJerk_mean_axis-X
+          mean of the body linear acceleration signal along x-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
+
+     tBodyAccJerk_mean_axis-Y
+          mean of the body linear acceleration signal along y-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
+
+     tBodyAccJerk_mean_axis-Z
+          mean of the body linear acceleration signal along z-axis measured using accelerometer
+               length: 1
+               type:   numeric
+               unit:   'g' standard gravity unit of acceleration
+               range:  -1..1 normalized values
+
+     tBodyGyro_mean_axis-X
+          mean of the body angular velocity signal along x-axis measured using gyroscope
+               length: 1
+               type:   numeric
+               unit:   radians/second
+               range:  -1..1 normalized values
+    
+     tBodyGyro_mean_axis-Y
+          mean of the body angular velocity signal along y-axis measured using gyroscope
+               length: 1
+               type:   numeric
+               unit:   radians/second
+               range:  -1..1 normalized values
+
+     tBodyGyro_mean_axis-Z
+          mean of the body angular velocity signal along z-axis measured using gyroscope
+               length: 1
+               type:   numeric
+               unit:   radians/second
+               range:  -1..1 normalized values
+
+     tBodyGyroJerk_mean_axis-X
+
+     tBodyGyroJerk_mean_axis-Y
+
+     tBodyGyroJerk_mean_axis-Z
+
+     tBodyAccMag_mean
+
+     tGravityAccMag_mean
+
+     tBodyAccJerkMag_mean
+     
+     tBodyGyroMag_mean
+
+     tBodyGyroJerkMag_mean
+
+     fBodyAcc_mean_axis-X
+
+     fBodyAcc_mean_axis-Y
+     
+     fBodyAcc_mean_axis-Z
+
+     fBodyAccJerk_mean_axis-X
+
+     fBodyAccJerk_mean_axis-Y
+
+     fBodyAccJerk_mean_axis-Z
+ 
+     fBodyGyro_mean_axis-X
+
+     fBodyGyro_mean_axis-Y
+
+     fBodyGyro_mean_axis-Z
+
+     fBodyAccMag_mean
+         
+     fBodyBodyAccJerkMag_mean
+
+     fBodyBodyGyroMag_mean
+
+     fBodyBodyGyroJerkMag_mean
+
+     tBodyAcc_std_axis-X
+      
+     tBodyAcc_std_axis-Y
+
+     tBodyAcc_std_axis-Z
+
+     tGravityAcc_std_axis-X
+
+     tGravityAcc_std_axis-Y
+   
+     tGravityAcc_std_axis-Z
+
+     tBodyAccJerk_std_axis-X
+
+     tBodyAccJerk_std_axis-Y
+
+     tBodyAccJerk_std_axis-Z
+  
+     tBodyGyro_std_axis-X
+
+     tBodyGyro_std_axis-Y
+
+     tBodyGyro_std_axis-Z
+
+     tBodyGyroJerk_std_axis-X
+ 
+     tBodyGyroJerk_std_axis-Y
+
+     tBodyGyroJerk_std_axis-Z
+
+     tBodyAccMag_std
+
+     tGravityAccMag_std
+       
+     tBodyAccJerkMag_std
+
+     tBodyGyroMag_std
+
+     tBodyGyroJerkMag_std
+
+     fBodyAcc_std_axis-X
+      
+     fBodyAcc_std_axis-Y
+
+     fBodyAcc_std_axis-Z
+
+     fBodyAccJerk_std_axis-X
+
+     fBodyAccJerk_std_axis-Y
+  
+     fBodyAccJerk_std_axis-Z
+
+     fBodyGyro_std_axis-X
+
+     fBodyGyro_std_axis-Y
+
+     fBodyGyro_std_axis-Z
+     
+     fBodyAccMag_std
+
+     fBodyBodyAccJerkMag_std
+
+     fBodyBodyGyroMag_std
+
+     fBodyBodyGyroJerkMag_std
 
 
 
