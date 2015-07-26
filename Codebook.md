@@ -19,9 +19,23 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ####Attribute Information:
 
-subjects
+     subjects
+     
+          ID of the 30 volunteers who participated in the experiment
+          
+               length: 2 
+               type:   Integer Id of person
+               range:  1..30
 
-activity
+
+     activity
+     
+          Six activities each person performed
+          
+               length: 1
+               type:   character
+               range:  ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS")
+
 
 tBodyAcc_mean_axis-X
 
