@@ -1,10 +1,9 @@
 **README - Coursera DataScience Course "Getting and Cleaning Data" Course-Project repository**
 
 
-####Contents
 This repository contains three files
 
-1. **Codebook.md** -    explains the details about the the layout of the data set, the variables and their definitions, any units of measurement, etc
+1. **CodeBook.md** -    explains the details about the the layout of the data set, the variables and their definitions, any units of measurement, etc
 2. **README.md** -      explains what the script does and how to run it and view the tidy data created using the script
 3. **run_analysis.R** - the R script that reads a given set of data and massages them into a tidy data
 
@@ -13,7 +12,7 @@ This repository contains three files
 
 ####The Script - run_analysis.R
 The script reads the data collected in different files during the training and test phases of data collection.
-After sourcing the script in a given directory, it can be run by - 
+After sourcing the script from any R-console in a given directory, it can be run by the command - 
 ```{r}
   run_analysis()
 ```
@@ -23,7 +22,7 @@ The pre-requisites for this operation is -
 2. The _base_ package of R should be loaded. The script loads the required libraries as and when needed in the course of analysing the data
 
 
-Processing is done in steps specified in the project description.
+Processing is done in steps as specified in the course project description.
 
 **Step 1: Merges the training and the test sets to create one data set.**
 
@@ -47,7 +46,7 @@ The files that are read to load the training data are -
 	                                                from the Samsung Galaxy S smartphone
 
 
-Both training and test phase data are combined first with the subjects and activity data column wise respectively. The combined training and test data is then stacked upon to form a complete data set. 
+Both training and test phase data are combined first with the subjects and activity data, column wise respectively. The combined training and test data is then stacked upon to form a complete data set. 
 
 
 
@@ -86,7 +85,7 @@ Script uses the _**reshape2**_ package's APIs to process the data set further.
 It first, melts the data set using _**melt()**_ api with _ID=c("subjects", "activity")_ and the rest of the columns as _measure.vars_
 
 
-Next, the melted data set is used to _**dcast()**_ the _subjects_ and _activity_ data against the measurements variable applying function **mean** to each
+Next, the melted data set is used to _**dcast()**_ the _subjects_ and _activity_ data against the measurements variable, applying function **mean** to each.
 
 
 This gives the tidy data set. Some more massaging of the resultant column names gives a better and tidy looking data set.
