@@ -19,7 +19,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 As per the requirements of the Course Project the data obtained from the source have been analysed and transformed into a small and tidy data set with only mean and standard deviation of the measurements extracted from the original data set. The actual values contained in the tidy data set is an average of each variable attribute(described below) for each activity and each subject using the _**melt()**_ and _**dcast()**_ APIs of the **R** _**reshape2**_ package. 
 
 
-Please check the [README.md](https://github.com/decipleme/getandcleandata/blob/master/README.md) for more details on how original data was trnasformed to a tidy data set.
+Please check the [README.md](https://github.com/decipleme/getandcleandata/blob/master/README.md) for more details on how original data was transformed into a tidy data set.
 
 
 
