@@ -177,91 +177,91 @@ _NOTE: prefix **'t'** denotes time domain signals and
                range:  -1..1 normalized values
 
      fBodyAcc_mean_axis-X
-          mean of the body acceleration signal along x-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAcc_mean_axis-Y
-          mean of the body acceleration signal along y-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
      
      fBodyAcc_mean_axis-Z
-          mean of the body acceleration signal along z-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAccJerk_mean_axis-X
-          mean of the body acceleration derived in frequency signal along x-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration derived in frequency signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAccJerk_mean_axis-Y
-          mean of the body acceleration derived in frequency signal along y-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration derived in frequency signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAccJerk_mean_axis-Z
-          mean of the body acceleration derived in frequency signal along z-axis after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration derived in frequency signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
  
      fBodyGyro_mean_axis-X
-          mean of the body angular velocity signal along x-axis after applying Fast Fourier Transform(FTT)
+          mean of the body angular velocity signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyGyro_mean_axis-Y
-          mean of the body angular velocity signal along y-axis after applying Fast Fourier Transform(FTT)
+          mean of the body angular velocity signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyGyro_mean_axis-Z
-          mean of the body angular velocity signal along z-axis after applying Fast Fourier Transform(FTT)
+          mean of the body angular velocity signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyAccMag_mean
-          mean of the body acceleration signal magnitude after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
          
      fBodyBodyAccJerkMag_mean
-          mean of the body acceleration derived in frequency signal magnitude after applying Fast Fourier Transform(FTT)
+          mean of the body acceleration derived in frequency signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyBodyGyroMag_mean
-          mean of the body angular velocity signal magnitude after applying Fast Fourier Transform(FTT)
+          mean of the body angular velocity signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyBodyGyroJerkMag_mean
-          mean of the body angular velocity derived in frequency signal magnitude after applying Fast Fourier Transform(FTT)
+          mean of the body angular velocity derived in frequency signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
@@ -408,91 +408,91 @@ _NOTE: prefix **'t'** denotes time domain signals and
                range:  -1..1 normalized values
 
      fBodyAcc_std_axis-X
-          standard deviation of the body acceleration signal along x-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
       
      fBodyAcc_std_axis-Y
-          standard deviation of the body acceleration signal along y-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAcc_std_axis-Z
-          standard deviation of the body acceleration signal along z-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAccJerk_std_axis-X
-          standard deviation of the body acceleration derived in frequency signal along x-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration derived in frequency signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyAccJerk_std_axis-Y
-          standard deviation of the body acceleration derived in frequency signal along y-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration derived in frequency signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
   
      fBodyAccJerk_std_axis-Z
-          standard deviation of the body acceleration derived in frequency signal along z-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration derived in frequency signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyGyro_std_axis-X
-          standard deviation of the body angular velocity signal along x-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body angular velocity signal along x-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyGyro_std_axis-Y
-          standard deviation of the body angular velocity signal along y-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body angular velocity signal along y-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyGyro_std_axis-Z
-          standard deviation of the body angular velocity signal along z-axis after applying Fast Fourier Transform(FTT)
+          standard deviation of the body angular velocity signal along z-axis after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
      
      fBodyAccMag_std
-          standard deviation of the body acceleration signal magnitude after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyBodyAccJerkMag_std
-          standard deviation of the body acceleration derived in frequency signal magnitude after applying Fast Fourier Transform(FTT)
+          standard deviation of the body acceleration derived in frequency signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   'g' standard gravity unit of acceleration
                range:  -1..1 normalized values
 
      fBodyBodyGyroMag_std
-          standard deviation of the body angular velocity signal magnitude after applying Fast Fourier Transform(FTT)
+          standard deviation of the body angular velocity signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
                range:  -1..1 normalized values
 
      fBodyBodyGyroJerkMag_std
-          standard deviation of the body angular velocity derived in frequency signal magnitude after applying Fast Fourier Transform(FTT)
+          standard deviation of the body angular velocity derived in frequency signal magnitude after applying Fast Fourier Transform(FFT)
                length: 1
                type:   numeric
                unit:   Hz
