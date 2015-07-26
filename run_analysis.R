@@ -87,13 +87,5 @@ run_analysis <- function() {
                 sep = " ", row.names = FALSE)
     return
     
-    # To read the tidy data created during this analysis, run these two
-    # commands 
-    # (courtesy= https://class.coursera.org/getdata-030/forum/thread?thread_id=37)
-    #
-    # data <- read.table("./GettingNCleaningData_Project_tidyData.txt", 
-    #                    colClasses = "character", check.names = FALSE, 
-    #                    header = TRUE)
-    # View(data)
-    #
+    # Please check the README.md in order to view the tidy data set. 
 }
