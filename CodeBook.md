@@ -34,7 +34,7 @@ As per the requirements of the Course Project the data obtained from the source 
                range:  ("LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS")
 
 _NOTE: prefix **'t'** denotes time domain signals and
-       prefix **'f'** denote frequence domain signals_
+       prefix **'f'** denotes frequency domain signals_
        
      tBodyAcc_mean_axis-X
           mean of the body acceleration signal along x-axis measured using accelerometer
