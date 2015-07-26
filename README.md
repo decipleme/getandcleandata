@@ -31,7 +31,6 @@ The files that are read to load the test data are -
 
 	* "./UCI HAR Dataset/test/subject_test.txt" - contains the test subject Ids
 	* "./UCI HAR Dataset/test/y_test.txt"       - contains the test activities performed
-
 	                                              by the subjects
 	* "./UCI HAR Dataset/test/X_test.txt"       - contains the test measurements collected 
 	                                              from the accelerometers from the Samsung 
@@ -44,7 +43,6 @@ The files that are read to load the training data are -
 	* "./UCI HAR Dataset/train/y_train.txt"       - contains the training activities performed 
 	                                                by the subjects
 	* "./UCI HAR Dataset/train/X_train.txt"       - contains the measurements collected 
-
 	                                                during training phase from the accelerometers 
 	                                                from the Samsung Galaxy S smartphone
 
@@ -84,9 +82,10 @@ _**NOTE:** This completes the 4 steps to combine the required data. I have taken
 
 Script uses the _**reshape2**_ package's APIs to process the data set further.
 
-	* It first, melts the data set using _**melt()**_ api with _ID=c("subjects", "activity")_ and the rest of the columns as _measure.vars_
-	* Next, the melted data set is used to _**dcast()**_ the _subjects_ and _activity_ data against the measurements variable applying function **mean** to each
-
+	* It first, melts the data set using _**melt()**_ api with _ID=c("subjects", "activity")_ 
+	  and the rest of the columns as _measure.vars_
+	* Next, the melted data set is used to _**dcast()**_ the _subjects_ and _activity_ data 
+	  against the measurements variable applying function **mean** to each
 This gives the tidy data set. Some more massaging of the resultant column names gives a better and tidy looking data set.
 The tidy data set is then written to a text file using _**write.table**_ api as suggested in the rubric.
 
